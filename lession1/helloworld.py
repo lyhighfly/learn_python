@@ -19,6 +19,9 @@ else:
 
 #转义符的用法和c java 是相同的，不过这里有个特殊用法  r'\\n\n'  表示引号中的不用转义
 print r'\\\n\n'
+#u'中文'将会使用Unicode进行内容的编码
+print u'中文', u'\u4e2d'
+#可以使用.encode('utf-8)进行目标转码，UTF-8转成Unicode使用：decode('utf-8')
 
 #py内置了布尔值(打印出来的也是True,False ,跟c不一样)，True False , 布尔预算则是：and or not 法则是通用的
 
@@ -39,3 +42,11 @@ print 'param = ',param
 
 #同样的，py 也是将常量大写表示的，但是没有如同const  final一类的保护机制，所以维护工作要自己做
 PI=3.1415926
+
+#字符串的格式化输出，和c基本上是一样的, 当不确定使用什么格式的时候，使用%s基本永远是正确的
+print "hello %s from %d" %("liuyu",100)
+
+
+
+
+
